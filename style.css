@@ -1,0 +1,66 @@
+*{
+    margin:0;  /*   tüm html elemanlarının  margin ( dış boşluklarını dıştan boşluk ) farklı tarayıcılar uyum sağlasın diye */
+    padding: 0;  /*  tüm html elemanlarının iç boşluklarını 0lar  .... css reset  işlemi   */   
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%; /* boyut genişlik ayarı */
+    min-height: 100vh;  /* minimum yükseklik içerik nekadar büyükse containerde uzar */
+    background: linear-gradient( #2586c7, #1B2631); /* arka plan tasarımı */
+    color:#fff; 
+    padding-top: 4%;  /* containerin  üstündne 4% bosluk */
+    padding-left:10%; /* sol tarafından */
+} 
+
+
+
+.container h1{
+
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.container h1 img {
+    width: 50px;
+}
+
+.container button img {
+    width: 25px;
+    margin-right: 8px;
+}
+.container button{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgb(207, 207, 7));
+    border:0;
+    border-radius: 40px;
+    padding:15px 25px;
+    margin:30px 0 20px;
+    cursor: pointer;
+}
+
+.input-box{
+    position:relative;
+    width:100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: #fff;
+    color:#333;
+    padding: 20px;
+    margin:20px 0;
+    outline: none;
+    border-radius: 5px;
+ 
+
+}
+.input-box img{
+    width: 25px;
+    position:absolute;
+    bottom:15px;
+    right:15px;
+    cursor: pointer;
+  
+}
